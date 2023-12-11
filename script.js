@@ -1,6 +1,6 @@
 function isSameType(value1, value2) {
   //your js code here
-  let result = (value1===value2)?  true: false;
+  let result = (isNaN(value1) && isNaN(value2)) || (value1===value2)?  true: false;
 	console.log(result);
 	return result;
 }
